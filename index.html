@@ -35,6 +35,32 @@
 					</textarea>
 				</section>
 
+				<!-- 
+					Metadata creates context for data
+				//-->
+
+				<section>
+					<h2>What is Metadata?</h2>
+					<hr/>
+
+					"a set of data that describes and gives information about other data"
+
+					<br/>
+
+					(as quoted in Google's infobox)
+
+
+					<br/>
+					
+					<div class="fragment">
+						<img src="./images/metadata-iceberg.jpg" style="width:800px; border:0px;" />
+					</div>
+				</section>
+
+				<!-- 
+					SemWeb is metadata, writ large
+				//-->
+
 				<section>
 					<h2>The Semantic Web</h2>
 					Proposed by Tim Berners Lee, creator of the Web
@@ -43,24 +69,50 @@
 					<div class="fragment">
 						"web of content" &#x2192; "web of data" + "web of trust"
 					</div>
+					<div class="fragment">
+						&#x2192; "web of meaning"
+					</div>
+					<br/>
+					<hr/>
+					<div class="fragment">
+						15 years: lots of standards and tools.
+						<br/>
+						<table>
+							<tr>
+								<td style="text-align:center;">
+									<a href="https://protegewiki.stanford.edu/wiki/Main_Page"><img src="./images/tools-protege.jpg" style="width:300px; border:0px;" /></a>
+									</td>
+								<td>
+									<img src="./images/tools-rdf-example-wikipedia.png" style="width:475px; border:0px; background-color:#fff;" />
+								</td>
+							</tr>
+						</table>
+					</div>
 				</section>
+
 
 				<section>
 					<h2>It Largely Failed</h2>
 					<hr/>
-					<blockquote cite="https://people.well.com/user/doctorow/metacrap.htm"
-					class="fragment">
-					"Metacrap"
-					<br/>- Cory Doctorow
-					<br/><em>Putting the torch to seven straw-men of the meta-utopia</em>
-					</blockquote>
+
+					<div class="fragment">
+						More standards produced than useful tools.
+					</div>
 
 					<br/>
+
 					<div class="fragment">
-						Lies, laziness, stupidity, more than one way to describe something.
-					</div>
-					<div class="fragment">
-						Also, the W3C produced more standards than useful things.
+						<blockquote cite="https://people.well.com/user/doctorow/metacrap.htm">
+							"Metacrap"
+							<br/>
+							<div style="text-align:right;">
+								<br/>- Cory Doctorow
+								<br/><em style="font-size:0.8em;">Putting the torch to seven straw-men of the meta-utopia</em>
+							</div>
+						</blockquote>
+
+						<br/>Insurmountable obstacles: 
+						<br/>...lies, laziness, stupidity, impracticality...
 					</div>
 
 				</section>
@@ -101,24 +153,33 @@
 						<table>
 						<tr>
 							<td class="fragment">
-								<strong>Email actions:</strong>
+								<strong>Email actions in microdata:</strong>
 								<ul>
 									<li>
 										Airline flight info 
+										<br/>
+										<img src="./images/gmail-markup-airline.png" style="width:350px; border:0px;" />
 									</li>
 									<li>
 										Git actions 
+										<br/>
+										<img src="./images/gmail-markup-github.png" style="width:350px; border:0px;" />
 									</li>
 								</ul>
+
+
+
 							</td>
 							<td class="fragment">
-								<strong>Search engine results:</strong>
+								<strong>Aggregated for search results:</strong>
 								<ul>
 									<li>
 										"Live" blog updates
 									</li>
 									<li>
-										Infoboxes
+										Google Infoboxes
+										<br/>
+										<img src="./images/google-infobox.png" style="width:350px; border:0px;" />
 									</li>
 								</ul>
 							</td>
@@ -131,7 +192,7 @@
 				<section>
 					<section id="fragments">
 						<h2>Using metadata</h2>
-							<p>(when we make use of open data)</p>
+							<p>(to create new content)</p>
 						<hr/>
 
 						<ul>
@@ -170,9 +231,13 @@
 					</section>
 				</section>
 
+				<!-- 
+					Entity ERCs
+				//-->
+
 				<section>
 					<section id="fragments">
-						<h2>Using metadata</h2>
+						<h2>Using metadata in "Entity ERCs"</h2>
 						<p>(explicitly and verifiably)</p>
 						<hr/>
 						
@@ -182,6 +247,9 @@
 							</li>
 							<li class="fragment">
 								ERC-735 Claims, ERC-725 Identity
+							</li>
+							<li class="fragment">
+								Using ENS to point to data on Swarm
 							</li>
 						</ul>
 
@@ -498,15 +566,35 @@ NB Transitive - the ingredients of ingredients are ingredients of the whole
 					</ul>
 				</section>
 
+				<!--
+					permanent metadata
+					changing metadata
+					meaningfully link to contracts
+					describe entities
+				//-->
+
 				<section>
 					<h2>JSON-LD on Swarm</h2>
 					Metadata as glue between contracts and dapps
 					<hr/>
 					<ul class="fragment">
-						<li>Swarm URIs (permanent metadata)</li>
-						<li>ENS Swarm URIs (changing metadata)</li>
+						<li>Swarm URIs</li>
+						<li>ENS Swarm URIs</li>
 						<li>Refer to specific contracts and function output in Swarm-hosted JSON-LD</li>
-						<li>Clearly describe data with types and properties using Swarm-hosted ABIs</li>
+						<li>Host descriptive data for "Entity ERCs" on Swarm:
+							<br/>versions, ABI
+						</li>
+					</ul>
+				</section>
+
+				<section>
+					<h2>Summary</h2>
+					<hr/>
+					<ul>
+						<li>Learn from history</li>
+						<li>Create more meaning within this new medium</li>
+						<li>Standards by convention</li>
+						<li>Use the useful stuff from the W3C: concepts, JSON-LD</li>
 					</ul>
 				</section>
 

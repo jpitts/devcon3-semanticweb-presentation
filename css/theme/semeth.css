@@ -19,6 +19,8 @@
 }
 
 
+
+
 /*********************************************
  * GLOBAL STYLES
  *********************************************/
@@ -197,6 +199,7 @@ body {
 
 .reveal table th,
 .reveal table td {
+  vertical-align:top;
   text-align: left;
   /*padding: 0.2em 0.5em 0.2em 0.5em;*/
   padding: 0.5em 0.7em 0.5em 0.7em;
