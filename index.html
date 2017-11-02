@@ -1,0 +1,571 @@
+	<!doctype html>
+<html>
+	<head>
+		<meta charset="utf-8">
+		<meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no">
+
+		<title>Semantic Ethereum</title>
+
+		<link rel="stylesheet" href="css/reveal.css">
+		<link rel="stylesheet" href="css/theme/semeth.css">
+
+		<!-- Theme used for syntax highlighting of code -->
+		<link rel="stylesheet" href="lib/css/zenburn.css">
+
+		<!-- Printing and PDF exports -->
+		<script>
+			var link = document.createElement( 'link' );
+			link.rel = 'stylesheet';
+			link.type = 'text/css';
+			link.href = window.location.search.match( /print-pdf/gi ) ? 'css/print/pdf.css' : 'css/print/paper.css';
+			document.getElementsByTagName( 'head' )[0].appendChild( link );
+		</script>
+	</head>
+	<body>
+		<div class="reveal">
+			<div class="slides">
+
+				<section data-markdown>
+					<textarea data-template>
+
+					## Semantic Ethereum
+
+					Linking decentralized apps together with data
+
+					</textarea>
+				</section>
+
+				<section>
+					<h2>The Semantic Web</h2>
+					Proposed by Tim Berners Lee, creator of the Web
+					<hr/>
+					<br/>
+					<div class="fragment">
+						"web of content" &#x2192; "web of data" + "web of trust"
+					</div>
+				</section>
+
+				<section>
+					<h2>It Largely Failed</h2>
+					<hr/>
+					<blockquote cite="https://people.well.com/user/doctorow/metacrap.htm"
+					class="fragment">
+					"Metacrap"
+					<br/>- Cory Doctorow
+					<br/><em>Putting the torch to seven straw-men of the meta-utopia</em>
+					</blockquote>
+
+					<br/>
+					<div class="fragment">
+						Lies, laziness, stupidity, more than one way to describe something.
+					</div>
+					<div class="fragment">
+						Also, the W3C produced more standards than useful things.
+					</div>
+
+				</section>
+
+				<section>
+					<h2>Yet metadata is widespread</h2>
+				</section>
+
+				<section>
+					<h2>Apps share data</h2>
+					And that data is described, has a context
+					<hr/>
+
+					<ul>
+
+						<li class="fragment">
+							API Calls
+						</li>
+
+						<li class="fragment">
+							Embedded as <a href="https://en.wikipedia.org/wiki/Microdata_(HTML)">WHATWG HTML Microdata</a>
+						</li>
+
+						<li class="fragment">
+							Served as static files on the web
+						</li>
+
+					</ul>
+
+				</section>
+
+				<section>
+					<section id="fragments">
+						<h2>Using metadata</h2>
+						<p>(perhaps without knowing it)</p>
+						<hr/>
+
+						<table>
+						<tr>
+							<td class="fragment">
+								<strong>Email actions:</strong>
+								<ul>
+									<li>
+										Airline flight info 
+									</li>
+									<li>
+										Git actions 
+									</li>
+								</ul>
+							</td>
+							<td class="fragment">
+								<strong>Search engine results:</strong>
+								<ul>
+									<li>
+										"Live" blog updates
+									</li>
+									<li>
+										Infoboxes
+									</li>
+								</ul>
+							</td>
+						</tr>
+					</table>
+
+					</section>
+				</section>
+
+				<section>
+					<section id="fragments">
+						<h2>Using metadata</h2>
+							<p>(when we make use of open data)</p>
+						<hr/>
+
+						<ul>
+
+							<li class="fragment">
+							Wikipedia &#x2192; Wikidata
+							</li>
+
+							<li class="fragment">
+								<a href="http://dbpedia.org">dbpedia.org</a>
+								<br/>
+								A "multilingual, semantic knowledge graph"
+							</li>
+
+						</ul>
+
+					</section>
+				</section>
+
+				<section>
+					<section id="fragments">
+						<h2>Using metadata</h2>
+						<p>(implicitly)</p>
+						<hr/>
+
+						<ul>
+							<li class="fragment">
+							Cory Doctorow's "observational metadata"
+							</li>
+
+							<li class="fragment">
+							Google's PageRank algorithm
+							</li>
+						</ul>
+
+					</section>
+				</section>
+
+				<section>
+					<section id="fragments">
+						<h2>Using metadata</h2>
+						<p>(explicitly and verifiably)</p>
+						<hr/>
+						
+						<ul>
+							<li class="fragment">
+								Interacting with ERC-20 Token contracts
+							</li>
+							<li class="fragment">
+								ERC-735 Claims, ERC-725 Identity
+							</li>
+						</ul>
+
+					</section>
+				</section>
+
+				<section>
+					<h3>Conundrum of web metadata:</h3>
+
+					<ul class="fragment">
+						<li>
+							Loosely-declared metadata can lead to ambiguity
+						</li>
+						<li>
+							Structured and descriptive metadata is burdensome
+						</li>
+					</ul>
+				</section>
+
+				<section>
+						<h2>What is the Semantic Web?</h2>
+						<hr/>
+
+						<ul>
+							<li class="fragment">
+								Highly formalized metadata
+							</li>
+							<li class="fragment">
+								Layered on top of the open World Wide Web
+							</li>
+							<li class="fragment">
+								Data that <strong>can refer</strong> to other data (linkage)
+							</li>
+							<li class="fragment">
+								Data that software <strong>can denote</strong> (descriptive meaning)
+							</li>
+							<li class="fragment">
+								Data that <strong>can be reasoned about</strong> (structural meaning)
+							</li>
+						</ul>
+				</section>
+
+				<section>
+						<h2>Why?</h2>
+						<hr/>
+
+						<ul class="fragment">
+							<li>
+								Enable decentralized, autonomous software agents
+							</li>
+							<li>
+								Enable data to be easily and cheaply aggregated
+							</li>
+							<li>
+								Create a "value chain" of data
+							</li>
+						</ul>
+				</section>
+
+				<section>
+
+					<blockquote cite="http://www-sop.inria.fr/acacia/fabien/lecture/licence_travaux_etude2002/TheSemanticWeb/">
+						&ldquo;For the semantic web to function, computers must have access to structured collections of information and sets of inference rules that they can use to conduct automated reasoning.&rdquo;
+						<br/>
+						<div style="text-align:right;">
+							<br/>Tim Berners Lee
+							<br/><a href="http://www-sop.inria.fr/acacia/fabien/lecture/licence_travaux_etude2002/TheSemanticWeb/" target="_new">"The Semantic Web"</a>
+							<br/>2002 Scientific American article
+						</div>
+
+					</blockquote>
+
+				</section>
+
+				<section>
+					<h2>Linkage</h2>
+					<hr/>
+					Clarity requires unambiguous references to resources that are always there.
+				</section>
+
+				<section>
+					<h2>Linkage - Standards</h2>
+					<hr/>
+
+					<ul>
+						<li class="fragment">
+							RFC 3986 URI
+						</li>
+						<li class="fragment">
+							W3C XML Namespaces
+						</li>
+						<li class="fragment">
+						Example use of namespaces from Pizza Ontology:
+						<br/><a href="https://protege.stanford.edu/ontologies/pizza/pizza.owl">https://protege.stanford.edu/ontologies/pizza/pizza.owl</a>
+						</li>
+					</ul>
+					
+					<br/>
+
+					<pre class="scrollable fragment"><code data-trim data-noescape>
+&lt;rdf:RDF 
+xmlns=&quot;http://www.co-ode.org/ontologies/pizza/pizza.owl#&quot; 
+xmlns:pizza=&quot;http://www.co-ode.org/ontologies/pizza/pizza.owl#&quot; 
+xmlns:rdf=&quot;http://www.w3.org/1999/02/22-rdf-syntax-ns#&quot; 
+xmlns:rdfs=&quot;http://www.w3.org/2000/01/rdf-schema#&quot; 
+xmlns:terms=&quot;http://purl.org/dc/terms/&quot; 
+xmlns:owl=&quot;http://www.w3.org/2002/07/owl#&quot; 
+xmlns:xsd=&quot;http://www.w3.org/2001/XMLSchema#&quot; 
+xmlns:skos=&quot;http://www.w3.org/2004/02/skos/core#&quot; 
+xmlns:dc=&quot;http://purl.org/dc/elements/1.1/&quot; 
+xml:base=&quot;http://www.co-ode.org/ontologies/pizza/pizza.owl&quot;&gt;
+&lt;owl:Ontology rdf:about=&quot;http://www.co-ode.org/ontologies/pizza&quot;&gt;
+&lt;owl:versionIRI rdf:resource=&quot;http://www.co-ode.org/ontologies/pizza/2.0.0&quot;/&gt;
+&lt;dc:title xml:lang=&quot;en&quot;&gt;pizza&lt;/dc:title&gt;
+&lt;terms:contributor&gt;Nick Drummond&lt;/terms:contributor&gt;
+&lt;terms:license rdf:datatype=&quot;http://www.w3.org/2001/XMLSchema#string&quot;&gt;Creative Commons Attribution 3.0 (CC BY 3.0)&lt;/terms:license&gt;
+&lt;rdfs:label rdf:datatype=&quot;http://www.w3.org/2001/XMLSchema#string&quot;&gt;pizza&lt;/rdfs:label&gt;
+...
+...
+					</code></pre>
+
+				</section>
+
+
+				<section>
+					<h2>Descriptive Meaning</h2>
+					<hr/>
+					Denote assertions in data with types and properties.
+					<br/>
+					<ul>
+
+						<li class="fragment">
+							Case of ambiguity:
+							<br/><em>"It depends upon what the meaning of the word 'is' is."</em>
+							<br/>
+							&nbsp;&nbsp;- A prominent attorney
+						</li>
+
+						<li class="fragment">
+							Assertion:
+							<br/><em>"Los Angeles is a city"</em>
+						</li>
+
+						<li class="fragment">
+							Assertion on the Semantic Web: 
+							<br/><em>'Los Angeles' | is a type of | <a href="https://schema.org/City">https://schema.org/City</a></em>
+						</li>
+
+					</ul>
+				</section>
+
+				<section>
+					<h2>Descriptive Meaning - Standards</h2>
+					<hr/>
+					<ul>
+						<li class="fragment">
+							W3C RDF Schema: "Type"
+						</li>
+						<li class="fragment">
+							W3C OWL: "Object Property"
+						</li>
+						<li class="fragment">
+							Example from Pizza Ontology
+							<br/><a href="https://protege.stanford.edu/ontologies/pizza/pizza.owl">https://protege.stanford.edu/ontologies/pizza/pizza.owl</a>
+						</li>
+						<li class="fragment">
+							"a topping is a functional property of a pizza"
+						</li>
+					</ul>
+
+					<pre class="scrollable fragment"><code data-trim data-noescape>
+...
+&lt;!--
+ http://www.co-ode.org/ontologies/pizza/pizza.owl#isToppingOf 
+--&gt;
+&lt;owl:ObjectProperty rdf:about=&quot;http://www.co-ode.org/ontologies/pizza/pizza.owl#isToppingOf&quot;&gt;
+&lt;rdfs:subPropertyOf rdf:resource=&quot;http://www.co-ode.org/ontologies/pizza/pizza.owl#isIngredientOf&quot;/&gt;
+&lt;rdf:type rdf:resource=&quot;http://www.w3.org/2002/07/owl#FunctionalProperty&quot;/&gt;
+&lt;rdfs:comment xml:lang=&quot;en&quot;&gt;
+Any given instance of topping should only be added to a single pizza 
+(no cheap half-measures on our pizzas)
+&lt;/rdfs:comment&gt;
+&lt;/owl:ObjectProperty&gt;
+...
+...
+					</code></pre>
+
+				</section>
+
+				<section>
+					<h2>Structural Meaning</h2>
+					<hr/>
+					To be able to reason about data, specify the relations among types.
+				</section>
+
+				<section>
+					<h2>Structural Meaning - Standards</h2>
+					<hr/>
+					<ul>
+						<li class="fragment">
+							W3C RDF Schema: "Type"
+						</li>
+						<li class="fragment">
+							W3C OWL: "Transitive Property"
+						</li>
+						<li class="fragment">
+							Example from Pizza Ontology
+							<br/><a href="https://protege.stanford.edu/ontologies/pizza/pizza.owl">https://protege.stanford.edu/ontologies/pizza/pizza.owl</a>
+						</li>
+						<li class="fragment">
+							"the ingredients of ingredients are ingredients of the whole"
+						</li>
+					</ul>
+
+					<pre class="scrollable fragment"><code data-trim data-noescape>
+...
+&lt;!--
+ http://www.co-ode.org/ontologies/pizza/pizza.owl#hasIngredient 
+--&gt;
+&lt;owl:ObjectProperty rdf:about=&quot;http://www.co-ode.org/ontologies/pizza/pizza.owl#hasIngredient&quot;&gt;
+&lt;owl:inverseOf rdf:resource=&quot;http://www.co-ode.org/ontologies/pizza/pizza.owl#isIngredientOf&quot;/&gt;
+&lt;rdf:type rdf:resource=&quot;http://www.w3.org/2002/07/owl#TransitiveProperty&quot;/&gt;
+&lt;rdfs:domain rdf:resource=&quot;http://www.co-ode.org/ontologies/pizza/pizza.owl#Food&quot;/&gt;
+&lt;rdfs:range rdf:resource=&quot;http://www.co-ode.org/ontologies/pizza/pizza.owl#Food&quot;/&gt;
+&lt;rdfs:comment xml:lang=&quot;en&quot;&gt;
+NB Transitive - the ingredients of ingredients are ingredients of the whole
+&lt;/rdfs:comment&gt;
+&lt;/owl:ObjectProperty&gt;
+...
+...
+					</code></pre>
+
+				</section>
+
+				<section>
+					<h2>Transitive Property</h2>
+					<hr/>
+
+					<div>
+						<img src="./images/pizza-taiwan-japan.jpg" style="width:600px;"/>
+					</div>
+
+					<ul>
+						<li>
+							Mini hot dog is an ingredient of pizza.
+						</li>
+						<li>
+							Ketchup is an ingredient of mini hot dog.
+						</li>
+						<li>
+							Therefore, ketchup is an ingredient of pizza.
+						</li>
+					</ul>
+
+					<br/>
+					<br/>
+					Photo by <a href="https://stephanietsai.wordpress.com">Stephanie Karlik</a>
+
+				</section>
+
+
+				<section>
+					<blockquote cite="https://people.well.com/user/doctorow/metacrap.htm">
+						"Ease of understanding has been sacrificed at the altar of pedantic technical accuracy..."
+						<br/>
+						<div style="text-align:right;">
+							<br/>- Manu Sporny
+							<br/><em>JSON-LD and Why I Hate the Semantic Web</em>
+						</div>
+					</blockquote>
+				</section>
+
+				<section>
+					<h2>Manu Sporny</h2>
+					Semantic Web anti-hero, founder of Digital Bazaar
+					<hr/>
+
+					<ul>
+						<li class="fragment">Developed JSON-LD standard 
+							<br/>(<a href="https://json-ld.org">https://json-ld.org</a>)
+						</li>
+						<li class="fragment">Example: "Event" as JSON-LD</li>
+					</ul>
+
+					<br/>
+					<pre class="scrollable fragment"><code data-trim data-noescape>
+						{
+						  "@context": {
+						    "ical": "http://www.w3.org/2002/12/cal/ical#",
+						    "xsd": "http://www.w3.org/2001/XMLSchema#",
+						    "ical:dtstart": {
+						      "@type": "xsd:dateTime"
+						    }
+						  },
+						  "ical:summary": "Devcon3",
+						  "ical:location": "Cancún, Quintana Roo, Mexico",
+						  "ical:dtstart": "2017-11-01T13:00:00Z"
+						}
+					</pre></code>
+
+				</section>
+
+				<section>
+					<h2>Semantic Ethereum</h2>
+					(much is already in place)
+					<hr/>
+					<ul class="fragment">
+						<li>Linkage: 
+							<br/>addresses, signatures, ERC-735 Claim URIs</li>
+						<li>Descriptive: 
+							<br/>ABIs, ERCs, documentation</li>
+						<li>Structural: 
+							<br/>enforced in the EVM</li>
+					</ul>
+				</section>
+
+				<section>
+					<h2>JSON-LD on Swarm</h2>
+					Metadata as glue between contracts and dapps
+					<hr/>
+					<ul class="fragment">
+						<li>Swarm URIs (permanent metadata)</li>
+						<li>ENS Swarm URIs (changing metadata)</li>
+						<li>Refer to specific contracts and function output in Swarm-hosted JSON-LD</li>
+						<li>Clearly describe data with types and properties using Swarm-hosted ABIs</li>
+					</ul>
+				</section>
+
+				<section>
+					&nbsp;
+				</section>
+
+				<section data-markdown>
+					<textarea data-template>
+
+					## That's it.
+
+					</textarea>
+				</section>
+
+				<section data-markdown>
+					<textarea data-template>
+
+					## Done.
+
+					</textarea>
+				</section>
+
+				<section data-markdown>
+					<textarea data-template>
+
+					## Fin.
+
+					</textarea>
+				</section>
+
+				
+				<section data-markdown>
+					<textarea data-template>
+
+					## .
+
+					</textarea>
+				</section>
+
+			
+			</div>
+		</div>
+
+		<script src="lib/js/head.min.js"></script>
+		<script src="js/reveal.js"></script>
+
+		<script>
+			// More info about config & dependencies:
+			// - https://github.com/hakimel/reveal.js#configuration
+			// - https://github.com/hakimel/reveal.js#dependencies
+			Reveal.initialize({
+				dependencies: [
+					{ src: 'plugin/markdown/marked.js' },
+					{ src: 'plugin/markdown/markdown.js' },
+					{ src: 'plugin/notes/notes.js', async: true },
+					{ src: 'plugin/highlight/highlight.js', async: true, callback: function() { hljs.initHighlightingOnLoad(); } }
+				]
+			});
+		</script>
+	</body>
+</html>
