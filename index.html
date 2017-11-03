@@ -75,7 +75,9 @@
 					<br/>
 					<hr/>
 					<div class="fragment">
-						15 years: lots of standards and tools.
+						A major initiative at the W3C
+						<br/>
+						After 15 years: lots of standards and tools
 						<br/>
 						<table>
 							<tr>
@@ -96,7 +98,9 @@
 					<hr/>
 
 					<div class="fragment">
-						More standards produced than useful tools.
+						More standards produced than useful tools:
+						<br/>
+						RDFa, RDF Schema, OWL (for ontologies)
 					</div>
 
 					<br/>
@@ -110,8 +114,10 @@
 								<br/><em style="font-size:0.8em;"><a href="https://people.well.com/user/doctorow/metacrap.htm" target="_new">Putting the torch to seven straw-men of the meta-utopia</a></em>
 							</div>
 						</blockquote>
+					</div>
 
-						<br/>Insurmountable obstacles: 
+					<div class="fragment">
+						Insurmountable obstacles: 
 						<br/>...lies, laziness, stupidity, impracticality...
 					</div>
 
@@ -129,12 +135,12 @@
 					<ul>
 
 						<li class="fragment">
-							API Calls
-							<br/>(documentation is free-form metadata)
+							Embedded within HTML as <a href="https://en.wikipedia.org/wiki/Microdata_(HTML)">WHATWG Microdata</a>
 						</li>
 
 						<li class="fragment">
-							Embedded within HTML as <a href="https://en.wikipedia.org/wiki/Microdata_(HTML)">WHATWG Microdata</a>
+							API Calls
+							<br/>(documentation is free-form metadata)
 						</li>
 
 						<li class="fragment">
@@ -163,7 +169,7 @@
 										<img src="./images/gmail-markup-airline.png" style="width:350px; border:0px;" />
 									</li>
 									<li>
-										Git actions 
+										GitHub actions 
 										<br/>
 										<img src="./images/gmail-markup-github.png" style="width:350px; border:0px;" />
 									</li>
@@ -411,14 +417,13 @@ xml:base=&quot;http://www.co-ode.org/ontologies/pizza/pizza.owl&quot;&gt;
 &lt;!--
  http://www.co-ode.org/ontologies/pizza/pizza.owl#hasIngredient 
 --&gt;
-&lt;owl:ObjectProperty rdf:about=&quot;http://www.co-ode.org/ontologies/pizza/pizza.owl#hasIngredient&quot;&gt;
-&lt;owl:inverseOf rdf:resource=&quot;http://www.co-ode.org/ontologies/pizza/pizza.owl#isIngredientOf&quot;/&gt;
+&lt;owl:ObjectProperty 
+	rdf:about=&quot;http://www.co-ode.org/ontologies/pizza/pizza.owl#hasIngredient&quot;&gt;
+&lt;owl:inverseOf 
+	rdf:resource=&quot;http://www.co-ode.org/ontologies/pizza/pizza.owl#isIngredientOf&quot;/&gt;
 &lt;rdf:type rdf:resource=&quot;http://www.w3.org/2002/07/owl#TransitiveProperty&quot;/&gt;
 &lt;rdfs:domain rdf:resource=&quot;http://www.co-ode.org/ontologies/pizza/pizza.owl#Food&quot;/&gt;
 &lt;rdfs:range rdf:resource=&quot;http://www.co-ode.org/ontologies/pizza/pizza.owl#Food&quot;/&gt;
-&lt;rdfs:comment xml:lang=&quot;en&quot;&gt;
-NB Transitive - the ingredients of ingredients are ingredients of the whole
-&lt;/rdfs:comment&gt;
 &lt;/owl:ObjectProperty&gt;
 					</code></pre>
 
@@ -521,19 +526,35 @@ NB Transitive - the ingredients of ingredients are ingredients of the whole
 				</section>
 
 				<section>
-					<h2>Meaning we already have</h2>
+					<h3>Ethereum already has metadata</h3>
 					<hr/>
 					<ul class="fragment">
-						<li>Linkage:
+						<li><strong>Linkage:</strong>
 							<br/>addresses, signatures,
-							<br/>ERC-20 balance address, ERC-735 Claim URIs</li>
-						<li>Descriptive: 
+							<br/>ERC-20 balance address, ERC-735 Claim URI</li>
+						<li><strong>Descriptive:</strong> 
 							<br/>ABIs, ERCs, documentation
 						</li>
-						<li>Structural: 
+						<li><strong>Structural:</strong> 
 							<br/>enforced in the EVM, documentation
 						</li>
 					</ul>
+				</section>
+
+				<!--
+				Context will be helpful when the developer is gone
+				//-->
+
+				<section>
+					<h3>Ethereum developers
+					 	<br/>should build with more metadata</h3>
+					<hr/>
+					<div class="fragment">
+						Contracts, content, and data are potentially forever
+					</div>
+					<div class="fragment">
+						Footholds for expanding the ecosystem
+					</div>
 				</section>
 
 				<!--
@@ -544,12 +565,13 @@ NB Transitive - the ingredients of ingredients are ingredients of the whole
 				//-->
 
 				<section>
-					<h2>What we can add to Swarm</h2>
-					Permanent (but light) web of meaning
+					<h2>What we can do in Swarm</h2>
+					A permanent (but light) web of meaning
 					<hr/>
 					<ul class="fragment">
-						<li>Data that refers to other data in Swarm</li>
-						<li>Data that refers to data in specific Ethereum contracts</li>
+						<li>Semantically connect the pieces together</li>
+						<li>In JSON-LD, link to data in specific Ethereum contracts
+							<br/>(and vice versa)</li>
 						<li>Expand on the Contract ABI?</li>
 					</ul>
 				</section>
@@ -559,16 +581,23 @@ NB Transitive - the ingredients of ingredients are ingredients of the whole
 					<hr/>
 					<ul>
 						<li>Enough structure for creativity</li>
-						<li>Lightweight standards</li>
+						<li>Lightweight standards with benefits</li>
 						<li>Use the useful stuff from the W3C: 
 							<br/>general concepts, XML Namespaces, JSON-LD</li>
 					</ul>
 				</section>
 
 				<section>
+						<img src="./images/all-the-things-150x150.jpg" style="width:100px;height:100px; border:0px;" />
+					<br/>
 					James Pitts
 					<br/>
 					<a href="http://twitter.com/jamiepitts">http://twitter.com/jamiepitts</a>
+
+					<hr/>
+
+					This presentation was built with reveal.js
+					<a href="https://github.com/hakimel/reveal.js" target="_new">https://github.com/hakimel/reveal.js</a>
 				</section>
 
 				<section>
