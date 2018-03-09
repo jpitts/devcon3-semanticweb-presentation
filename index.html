@@ -47,8 +47,11 @@
 					<br/>
 					<a href="http://twitter.com/jamiepitts">http://twitter.com/jamiepitts</a>
 
+					<hr/>
+
 					<div>
-						A former big fan of the Semantic Web (now just so-so).
+						Once very enthralled with the Semantic Web
+						<br/>(now Ethereum has my attention)
 					</div>
 
 				</section>
@@ -78,11 +81,15 @@
 
 				<section>
 					<h2>The Semantic Web of the 00s</h2>
-					Proposed by Tim Berners Lee, creator of the Web
+					A visionary project initiated by Tim Berners Lee
+					<br/>
+					Metadata... writ large!
 					<hr/>
 					<br/>
 					<div style="margin-bottom:25px;">
-						<span class="fragment">"web of content"</span><span class="fragment"> &#x2192; "web of data" + "web of trust"</span>
+						
+						<br/>
+						<span class="fragment">"www of content"</span><span class="fragment"> &#x2192; "web of data" + "web of trust"</span>
 					</div>
 					<div>
 						<span class="fragment">&#x2192; "web of meaning"</span>
@@ -105,9 +112,11 @@
 					The basic idea:
 					<hr/>
 					<ol>
-						<li>Establish ontologies about things.</li>
-						<li>Metadata about all the things, all linked together.</li>
-						<li>The web becomes a giant graph database.</li>
+						<li class="fragment">Establish ontologies<br/>
+							(vocabularies, properties, relations).</li>
+						<li class="fragment">Publish metadata about the things<br/>
+							(referencing the ontologies).</li>
+						<li class="fragment">The content becomes a giant graph database.</li>
 					</ol>
 					<hr/>
 					<div>
@@ -121,8 +130,7 @@
 				//-->
 
 				<section>
-					<h2>The Semantic Web of the 00s</h2>
-					Interesting outcome: SPARQL
+					<h2>Cool Standard: SPARQL</h2>
 					<hr/>
 					Query all the things that are linked together!
 					<br/>
@@ -233,7 +241,7 @@
 
 
 				<section>
-						<h3>What does SemWeb-standard metadata provide?</h3>
+						<h3>What does "W3C Recommended" <br/>metadata provide?</h3>
 						<hr/>
 
 						<ul>
@@ -285,6 +293,9 @@
 						<ul>
 							<li class="fragment">
 								Highly formalized assertions
+							</li>
+							<li class="fragment">
+								Data format w/which to create graphs: RDF
 							</li>
 							<li class="fragment">
 								Layered on top of Web content
@@ -347,7 +358,7 @@ xml:base=&quot;http://www.co-ode.org/ontologies/pizza/pizza.owl&quot;&gt;
 ...
 					</code></pre>
 
-<pre class="fragment"><code data-trim data-noescape>
+<pre><code data-trim data-noescape>
 ...
 &lt;dc:title xml:lang=&quot;en&quot;&gt;pizza&lt;/dc:title&gt;
 &lt;terms:contributor&gt;Nick Drummond&lt;/terms:contributor&gt;
@@ -525,58 +536,63 @@ xml:base=&quot;http://www.co-ode.org/ontologies/pizza/pizza.owl&quot;&gt;
 					<hr/>
 
 					<ul>
-						<li class="fragment">Developed JSON-LD standard 
+						<li class="fragment">
+							Reform RDF: add context to data with less effort
+						</li>
+						<li class="fragment">Developed the JSON-LD standard 
 							<br/>(<a href="https://json-ld.org">https://json-ld.org</a>)
 						</li>
-						<li class="fragment">
-							Add context to data with less effort
-						</li>
-						<li class="fragment">Example: "Event" as JSON-LD</li>
 					</ul>
 
-					<br/>
-					<pre class="fragment"><code data-trim data-noescape>
-						{
-						  "@context": {
-						    "ical": "http://www.w3.org/2002/12/cal/ical#",
-						    "xsd": "http://www.w3.org/2001/XMLSchema#",
-						    "ical:dtstart": {
-						      "@type": "xsd:dateTime"
-						    }
-						  },
-						  "ical:summary": "Devcon3",
-						  "ical:location": "Cancún, Quintana Roo, Mexico",
-						  "ical:dtstart": "2017-11-01T13:00:00Z"
-						}
-					</pre></code>
+					<hr/>
+
+					<div  class="fragment">
+						Example: "Event" as JSON-LD:
+						<br/>
+
+						<pre><code data-trim data-noescape>
+							{
+							  "@context": {
+							    "ical": "http://www.w3.org/2002/12/cal/ical#",
+							    "xsd": "http://www.w3.org/2001/XMLSchema#",
+							    "ical:dtstart": {
+							      "@type": "xsd:dateTime"
+							    }
+							  },
+							  "ical:summary": "Devcon3",
+							  "ical:location": "Cancún, Quintana Roo, Mexico",
+							  "ical:dtstart": "2017-11-01T13:00:00Z"
+							}
+						</pre></code>
+					</div>
 
 				</section>
 
+				<!--
+				Why metadata in Ethereum
+				//-->
+
 				<section>
-					<h2>Semantic Ethereum</h2>
-					<hr/>
-					How much linking, describing, and structuring 
-					<br/>for our decentralized application data?
+					<h3>Why use metadata <br/>in the Ethereum ecosystem?</h3>
 					<hr/>
 					<div class="fragment">
-						Possibly: 
-						<div>
-							<ul>
-								<li>Optimize for creative extension</li> 
-								<li>Reasonable composability (JSON-LD)</li>
-							</ul>
-						</div>
+						Contracts, content, and data are potentially forever
 					</div>
 					<div class="fragment">
-						<img src="./images/lego-bricks.jpg" style="width:300px; border:0px;" />
-						&nbsp;
-						<img src="./images/lego-dimensions.png" style="width:300px; border:0px;" />
-
+						Reduce effort, cooperate with other dapp teams
+					</div>
+					<div class="fragment">
+						Footholds for expanding the ecosystem
 					</div>
 				</section>
 
+
+				<!--
+				Ethereum already has metadata
+				//-->
+
 				<section>
-					<h3>Ethereum already has metadata</h3>
+					<h3>Ethereum already has metadata!</h3>
 					<hr/>
 					<ul class="fragment">
 						<li><strong>Linkage:</strong>
@@ -592,33 +608,39 @@ xml:base=&quot;http://www.co-ode.org/ontologies/pizza/pizza.owl&quot;&gt;
 					</ul>
 				</section>
 
+
 				<!--
-				Context will be helpful when the developer is gone
+				Semantic Ethereum
 				//-->
 
 				<section>
-					<h3>Why use metadata in the Ethereum ecosystem?</h3>
+					<h2>Semantic Ethereum</h2>
+					<hr/>
+					How much linking, describing, and structuring 
+					<br/>for our decentralized application data?
 					<hr/>
 					<div class="fragment">
-						Contracts, content, and data are potentially forever
-					</div>
-					<div class="fragment">
-						Reduce effort, cooperate with other dapp teams
-					</div>
-					<div class="fragment">
-						Footholds for expanding the ecosystem
+						<strong>Let's go light on this</strong>
+						<div>
+							<ul>
+								<li>Developer familiarity (JSON-LD)</li>
+								<li>Incentive to get adoption (ecosystem)</li> 
+							</ul>
+						</div>
+
+						<img src="./images/lego-bricks.jpg" style="width:300px; border:0px;" />
+						&nbsp;
+						<img src="./images/lego-dimensions.png" style="width:300px; border:0px;" />
+
 					</div>
 				</section>
 
 				<!--
-					permanent metadata
-					changing metadata
-					meaningfully link to contracts
-					describe entities
+					What we can do
 				//-->
 
 				<section>
-					<h2>What we can do in Swarm</h2>
+					<h3>Metadata using Contracts and Swarm</h3>
 					A permanent (but light) web of meaning
 					<hr/>
 					<ul class="fragment">
@@ -630,10 +652,10 @@ xml:base=&quot;http://www.co-ode.org/ontologies/pizza/pizza.owl&quot;&gt;
 				</section>
 
 				<section>
-					<h2>Remember</h2>
+					<h2>Semantic Web Lessons</h2>
 					<hr/>
 					<ul>
-						<li>Only enough structure for creativity</li>
+						<li>Don't burden your developers</li>
 						<li>Build things that can be built on top of</li>
 						<li>Use the useful stuff from the W3C: 
 							<br/>general concepts, XML Namespaces, JSON-LD</li>
