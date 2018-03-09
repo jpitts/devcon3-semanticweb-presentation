@@ -32,11 +32,25 @@
 
 					Linking decentralized apps together with data
 
-					---
+					</textarea>
+				</section>
+
+				<!-- 
+					Whoami
+				//-->
+
+				<section>
+					<h2>whoami?</h2>
+					<hr/>
 
 					James Pitts
+					<br/>
+					<a href="http://twitter.com/jamiepitts">http://twitter.com/jamiepitts</a>
 
-					</textarea>
+					<div>
+						A former big fan of the Semantic Web (now just so-so).
+					</div>
+
 				</section>
 
 				<!-- 
@@ -57,16 +71,17 @@
 					</div>
 				</section>
 
+
 				<!-- 
 					SemWeb is metadata, writ large
 				//-->
 
 				<section>
-					<h2>The Semantic Web</h2>
+					<h2>The Semantic Web of the 00s</h2>
 					Proposed by Tim Berners Lee, creator of the Web
 					<hr/>
 					<br/>
-					<div>
+					<div style="margin-bottom:25px;">
 						<span class="fragment">"web of content"</span><span class="fragment"> &#x2192; "web of data" + "web of trust"</span>
 					</div>
 					<div>
@@ -75,32 +90,78 @@
 					<br/>
 					<hr/>
 					<div class="fragment">
-						A major initiative at the W3C
+						A major initiative at the W3C.
 						<br/>
-						After 15 years: lots of standards and tools
-						<br/>
-						<table>
-							<tr>
-								<td style="text-align:center;">
-									<a href="https://protegewiki.stanford.edu/wiki/Main_Page"><img src="./images/tools-protege.jpg" style="width:300px; border:0px;" /></a>
-									</td>
-								<td>
-									<img src="./images/tools-rdf-example-wikipedia.png" style="width:475px; border:0px; background-color:#fff;" />
-								</td>
-							</tr>
-						</table>
+						After 15 years: lots of intricate standards and tools.
+					</div>
+				</section>
+
+				<!-- 
+					Basic idea of the SemWeb
+				//-->
+
+				<section>
+					<h2>The Semantic Web of the 00s</h2>
+					The basic idea:
+					<hr/>
+					<ol>
+						<li>Establish ontologies about things.</li>
+						<li>Metadata about all the things, all linked together.</li>
+						<li>The web becomes a giant graph database.</li>
+					</ol>
+					<hr/>
+					<div>
+						<img src="./images/tools-rdf-example-wikipedia.png" style="width:512px; border:0px; background-color:#fff;" />
 					</div>
 				</section>
 
 
+				<!-- 
+					SPARQL
+				//-->
+
 				<section>
-					<h2>It Largely Failed</h2>
+					<h2>The Semantic Web of the 00s</h2>
+					Interesting outcome: SPARQL
+					<hr/>
+					Query all the things that are linked together!
+					<br/>
+					<div class="fragment">
+						<img src="./images/sparql-query-wikidata.png" style="width::200px; border:0px;"/>
+					</div>
+				</section>
+
+
+				<!-- 
+					SemWeb conundrum
+				//-->
+
+				<section>
+					<h3>Conundrum of web metadata:</h3>
+
+					<div class="fragment">
+							Loosely-declared metadata can lead to ambiguity
+					</div>
+					<div class="fragment">
+						but structuring and describing metadata can be burdensome.
+					</div>
+
+				</section>
+
+				<!-- 
+					SemWeb failed
+				//-->
+
+				<section>
+					<h2>The SemWeb Did Not "Go Big"</h2>
 					<hr/>
 
 					<div class="fragment">
-						More standards produced than useful tools:
+						Original vision was not widely adopted.
+						<br/><br/>
+						More standards produced than useful systems for users.
 						<br/>
-						RDFa, RDF Schema, OWL (for ontologies)
+						e.g. RDFa, RDF Schema, OWL (for ontologies)
 					</div>
 
 					<br/>
@@ -125,31 +186,6 @@
 
 				<section>
 					<h2>Yet metadata is widespread</h2>
-				</section>
-
-				<section>
-					<h2>Apps share data</h2>
-					And that data is often described
-					<hr/>
-
-					<ul>
-
-						<li class="fragment">
-							Embedded within HTML as <a href="https://en.wikipedia.org/wiki/Microdata_(HTML)">WHATWG Microdata</a>
-						</li>
-
-						<li class="fragment">
-							API Calls
-							<br/>(documentation is free-form metadata)
-						</li>
-
-						<li class="fragment">
-							Served as static data files on the web
-							<br/>(these often conform to Semantic Web standards)
-						</li>
-
-					</ul>
-
 				</section>
 
 				<section>
@@ -195,49 +231,9 @@
 					</section>
 				</section>
 
-				<section>
-					<h3>Conundrum of web metadata:</h3>
-
-					<div class="fragment">
-							Loosely-declared metadata can lead to ambiguity
-					</div>
-					<div class="fragment">
-						but structured and descriptive metadata can be burdensome.
-					</div>
-
-					<div class="fragment">
-						<table>
-							<tr><td>
-								<img src="./images/pedantic-brainy-smurf.png" style="width:200px; border:0px; background:#fff;"/>
-							</td>
-							<td>
-								<img src="./images/pedantic-twilight-sparkle.png" style="width:250px; border:0px;"/>
-							</td></tr>
-						</table>
-						Well-known, pedantic characters.
-					</div>
-
-				</section>
 
 				<section>
-						<h2>What is the Semantic Web?</h2>
-						<hr/>
-
-						<ul>
-							<li class="fragment">
-								Highly formalized metadata
-							</li>
-							<li class="fragment">
-								Layered on top of the open World Wide Web
-							</li>
-							<li class="fragment">
-								Standards, data, and tools
-							</li>
-						</ul>
-				</section>
-
-				<section>
-						<h3>What does the Semantic Web provide?</h3>
+						<h3>What does SemWeb-standard metadata provide?</h3>
 						<hr/>
 
 						<ul>
@@ -254,20 +250,23 @@
 				</section>
 
 				<section>
-						<h2>Why?</h2>
+						<h2>What does this lead to?</h2>
 						<hr/>
 
 						<div class="fragment">
 
 							<ul>
 								<li>
-									Enable decentralized, autonomous software agents
+									Rich options for publishing data
 								</li>
 								<li>
-									Enable data to be easily and cheaply aggregated
+									Data can be more easily and cheaply aggregated
 								</li>
 								<li>
-									Create a "value chain" of data
+									A "value chain" of data
+								</li>
+								<li>
+									New services
 								</li>
 							</ul>
 
@@ -277,6 +276,23 @@
 							Faith in knowledge representation and reasoning
 						</div>
 						///-->
+				</section>
+
+				<section>
+						<h2>How does metadata do this?</h2>
+						<hr/>
+
+						<ul>
+							<li class="fragment">
+								Highly formalized assertions
+							</li>
+							<li class="fragment">
+								Layered on top of Web content
+							</li>
+							<li class="fragment">
+								Aggregators deal with mixed expressions
+							</li>
+						</ul>
 				</section>
 
 				<section>
@@ -306,17 +322,17 @@
 					<hr/>
 
 					<ul>
-						<li class="fragment">
+						<li>
 							RFC 3986 URI
 						</li>
-						<li class="fragment">
+						<li>
 							XML Namespaces
 						</li>
 					</ul>
 					
 					<br/>
 
-					<pre class="fragment"><code data-trim data-noescape>
+					<pre><code data-trim data-noescape>
 &lt;rdf:RDF 
 xmlns=&quot;http://www.co-ode.org/ontologies/pizza/pizza.owl#&quot; 
 xmlns:pizza=&quot;http://www.co-ode.org/ontologies/pizza/pizza.owl#&quot; 
@@ -346,18 +362,23 @@ xml:base=&quot;http://www.co-ode.org/ontologies/pizza/pizza.owl&quot;&gt;
 				<section>
 					<h2>Descriptive Meaning</h2>
 					<hr/>
-					Denote assertions in data with types and properties.
-					<br/>
-					<ul class="fragment">
 
-						<li>
-							Assertion:
-							<br/><em>"Los Angeles is a city"</em>
+					Denote assertions in data with types and properties.
+					
+					<hr/>
+
+					<ul>
+
+						<li class="fragment">
+							Assertion about Los Angeles: 
+							<br/>
+							<em>'Los Angeles' | is a type of | <a href="https://schema.org/City">https://schema.org/City</a></em>
 						</li>
 
-						<li>
-							Assertion on the Semantic Web: 
-							<br/><em>'Los Angeles' | is a type of | <a href="https://schema.org/City">https://schema.org/City</a></em>
+						<li class="fragment">
+							Ontological assertion about pizza:
+							<br/>
+							<em>'topping' | is a functional property and ingredient of | 'pizza'</em>
 						</li>
 
 					</ul>
@@ -367,18 +388,15 @@ xml:base=&quot;http://www.co-ode.org/ontologies/pizza/pizza.owl&quot;&gt;
 					<h2>Descriptive Meaning - Standards</h2>
 					<hr/>
 					<ul>
-						<li class="fragment">
+						<li>
 							RDF Schema "Type"
 						</li>
-						<li class="fragment">
+						<li>
 							OWL "Object Property"
-						</li>
-						<li class="fragment">
-							'topping' | is a functional property and ingredient of | 'pizza'
 						</li>
 					</ul>
 
-					<pre class="fragment"><code data-trim data-noescape>
+					<pre><code data-trim data-noescape>
 &lt;!--
  http://www.co-ode.org/ontologies/pizza/pizza.owl#isToppingOf 
 --&gt;
@@ -395,25 +413,31 @@ xml:base=&quot;http://www.co-ode.org/ontologies/pizza/pizza.owl&quot;&gt;
 				<section>
 					<h2>Structural Meaning</h2>
 					<hr/>
+					
 					To be able to reason about data, specify the relations among types.
+
+					<hr/>
+
+					<div class="fragment">
+						Transitive Property of ingredients: <br/>
+						"the ingredients of ingredients are ingredients of the whole"
+					</div>
+
 				</section>
 
 				<section>
 					<h2>Structural Meaning - Standards</h2>
 					<hr/>
 					<ul>
-						<li class="fragment">
+						<li>
 							W3C RDF Schema: "Type"
 						</li>
-						<li class="fragment">
+						<li>
 							W3C OWL: "Transitive Property"
-						</li>
-						<li class="fragment">
-							"the ingredients of ingredients are ingredients of the whole"
 						</li>
 					</ul>
 
-					<pre class="fragment"><code data-trim data-noescape>
+					<pre><code data-trim data-noescape>
 &lt;!--
  http://www.co-ode.org/ontologies/pizza/pizza.owl#hasIngredient 
 --&gt;
@@ -430,29 +454,49 @@ xml:base=&quot;http://www.co-ode.org/ontologies/pizza/pizza.owl&quot;&gt;
 				</section>
 
 				<section>
-					<h2>Transitive Property</h2>
+					<h2>Reasoning w/ Transitive Property</h2>
+					Is the ketchup on the hot dogs an ingredient of the pizza?
 					<hr/>
 
 					<div>
 						<img src="./images/pizza-taiwan-japan.jpg" style="width:600px;"/>
 					</div>
 
-					<ul>
-						<li>
-							Mini hot dog is an ingredient of pizza.
-						</li>
-						<li>
-							Ketchup is an ingredient of mini hot dog.
-						</li>
-						<li>
-							Therefore, ketchup is an ingredient of pizza.
-						</li>
-					</ul>
+					<hr/>
+					<span style="font-size:15px">
+						Photo by <a href="https://stephanietsai.wordpress.com">Stephanie Karlik</a>
+					</span>
+				</section>
 
-					<br/>
-					<br/>
-					Photo by <a href="https://stephanietsai.wordpress.com">Stephanie Karlik</a>
 
+				<section>
+					<h2>Reasoning w/ Transitive Property</h2>
+					Is the ketchup on the hot dogs an ingredient of the pizza?
+					<hr/>
+
+					<div>
+						<img src="./images/pizza-taiwan-japan.jpg" style="width:300px;"/>
+					</div>
+					
+					<div>
+						<ul>
+							<li>
+								Mini hot dog is an ingredient of pizza.
+							</li>
+							<li>
+								Ketchup is an ingredient of mini hot dog.
+							</li>
+							<li>
+								Therefore, the ketchup is an ingredient of the pizza.
+							</li>
+						</ul>
+					</div>
+
+				</section>
+
+				<section>
+					<h3>Developers are not going to do this work
+						<br/>without major incentives!</h3>
 				</section>
 
 				<section>
@@ -511,11 +555,17 @@ xml:base=&quot;http://www.co-ode.org/ontologies/pizza/pizza.owl&quot;&gt;
 				<section>
 					<h2>Semantic Ethereum</h2>
 					<hr/>
-					What is the optimal amount of linking, describing, and structuring 
-					of our decentralized application data?
+					How much linking, describing, and structuring 
+					<br/>for our decentralized application data?
 					<hr/>
 					<div class="fragment">
-						Possibly: optimize for creativity, reasonable composability
+						Possibly: 
+						<div>
+							<ul>
+								<li>Optimize for creative extension</li> 
+								<li>Reasonable composability (JSON-LD)</li>
+							</ul>
+						</div>
 					</div>
 					<div class="fragment">
 						<img src="./images/lego-bricks.jpg" style="width:300px; border:0px;" />
@@ -536,7 +586,8 @@ xml:base=&quot;http://www.co-ode.org/ontologies/pizza/pizza.owl&quot;&gt;
 							<br/>ABIs, ERCs, documentation
 						</li>
 						<li><strong>Structural:</strong> 
-							<br/>enforced in the EVM, documentation
+							<br/>enforced in the EVM
+							<br/>enforced by Dapps
 						</li>
 					</ul>
 				</section>
@@ -546,11 +597,13 @@ xml:base=&quot;http://www.co-ode.org/ontologies/pizza/pizza.owl&quot;&gt;
 				//-->
 
 				<section>
-					<h3>Ethereum developers
-					 	<br/>should build with more metadata</h3>
+					<h3>Why use metadata in the Ethereum ecosystem?</h3>
 					<hr/>
 					<div class="fragment">
 						Contracts, content, and data are potentially forever
+					</div>
+					<div class="fragment">
+						Reduce effort, cooperate with other dapp teams
 					</div>
 					<div class="fragment">
 						Footholds for expanding the ecosystem
@@ -569,19 +622,19 @@ xml:base=&quot;http://www.co-ode.org/ontologies/pizza/pizza.owl&quot;&gt;
 					A permanent (but light) web of meaning
 					<hr/>
 					<ul class="fragment">
-						<li>Semantically connect the pieces together</li>
-						<li>In JSON-LD, link to data in specific Ethereum contracts
+						<li>Stop re-inventing "person", "address", and so on</li>
+						<li>Help create Ethereum's <a href="http://schema.org">http://schema.org</a></li>
+						<li>In Ethereum contracts, link to JSON-LD hosted on Swarm
 							<br/>(and vice versa)</li>
-						<li>Expand on the Contract ABI?</li>
 					</ul>
 				</section>
 
 				<section>
-					<h2>Lessons</h2>
+					<h2>Remember</h2>
 					<hr/>
 					<ul>
-						<li>Enough structure for creativity</li>
-						<li>Lightweight standards with benefits</li>
+						<li>Only enough structure for creativity</li>
+						<li>Build things that can be built on top of</li>
 						<li>Use the useful stuff from the W3C: 
 							<br/>general concepts, XML Namespaces, JSON-LD</li>
 					</ul>
